@@ -1,2 +1,2 @@
 # tech-init-easy
-CMS Blog Site using MVC
+CMS Tech Blog Site using MVC

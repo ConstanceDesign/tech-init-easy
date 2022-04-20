@@ -1,4 +1,4 @@
-# tech-init-easy
+# tech_init_easy
 
 CMS Tech Blog Site using MVC
 
@@ -41,7 +41,7 @@ In Visual Code Studio or another coding software of your choice, run this applic
 
 ## Built With
 
-Javascript,Node.js,Express.js,React.js,GraphQL,Apollo,MongoDB,Mongoose,Git
+js,Node.js,Express.js,React.js,GraphQL,Apollo,MongoDB,Mongoose,Git
 
 ## Contribution
 

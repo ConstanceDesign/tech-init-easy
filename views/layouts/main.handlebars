@@ -1,0 +1,40 @@
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tech Init Easy Blog</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>
+          <a href="/">Tech Init Easy Blog</a>
+        </h1>
+        <nav>
+          {{#if loggedIn}}
+            <a class="logout" href="/dashboard">Dashboard</a>
+            <button id="logout" class="btn">Logout</button>
+          {{else}}
+            <a class="login" href="/login">Login</a>
+          {{/if}}
+        </nav>
+      </header>
+      
+      <main>
+        {{{body}}}
+      </main>
+
+      <footer>
+  <h6 class="h6">&copy; 2022 Tech Init Easy Blog</h4>
+      </footer>
+    </div>
+
+    {{#if loggedIn}}
+      <script src="/javascript/logout.js"></script>
+    {{/if}}
+  </body>
+
+</html>

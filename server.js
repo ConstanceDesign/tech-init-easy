@@ -7,7 +7,7 @@ const exphbs = require("express-handlebars");
 const hbs = exphbs.create({ helpers });
 const session = require("express-session");
 const SequelizeStore = require("connect-session-sequelize")(session.Store);
-const env = process.env.NODE_ENV || "development";
+// const env = process.env.NODE_ENV || "development";
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -30,12 +30,16 @@ app.engine("handlebars", hbs.engine);
 app.set("view engine", "handlebars");
 
 // Middleware
+app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
-app.use(express.static(path.join(__dirname, "public")));
+// app.use(express.static(path.join(__dirname, "public")));
+
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static(path.join(__dirname, "../client/build")));
+}
 
 // Routes
-// app.use(routes);
+app.use(routes);
 app.use(require("./controllers/"));
 
 // Server Connection

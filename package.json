@@ -2,11 +2,11 @@
   "name": "tech-init-easy",
   "version": "1.0.0",
   "description": "CMS Tech Blog Site using MVC",
-  "main": "server.js",
+  "main": "server/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "seeds": "node seeds/index.js",
-    "start": "node server.js"
+    "start": "node server/server.js"
   },
   "repository": {
     "type": "git",

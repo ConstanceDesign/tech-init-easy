@@ -7,18 +7,16 @@ const exphbs = require("express-handlebars");
 const hbs = exphbs.create({ helpers });
 const session = require("express-session");
 const SequelizeStore = require("connect-session-sequelize")(session.Store);
+const env = process.env.NODE_ENV || "development";
 
 const app = express();
 const PORT = process.env.PORT || 3001;
 
 // Session
 const sess = {
-  secret: "Secret secret sauce",
-  cookie: {
-    maxAge: 1000000,
-  },
-  rolling: true,
-  resave: true,
+  secret: "super secret",
+  cookie: {},
+  resave: false,
   saveUninitialized: true,
   store: new SequelizeStore({
     db: sequelize,
@@ -27,19 +25,20 @@ const sess = {
 
 app.use(session(sess));
 
+// Handlebars
+app.engine("handlebars", hbs.engine);
+app.set("view engine", "handlebars");
+
 // Middleware
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, "public")));
 
-// Handlebars
-app.engine("handlebars", hbs.engine);
-app.set("view engine", "handlebars");
-
 // Routes
-app.use(routes);
+// app.use(routes);
+app.use(require("./controllers/"));
 
 // Server Connection
-sequelize.sync({ force: false }).then(() => {
-  app.listen(PORT, () => console.log("Now listening"));
-});
+// sequelize.sync({ force: false }).then(() => {
+app.listen(PORT, () => console.log("Now listening"));
+// });

@@ -2,8 +2,6 @@
 
 CMS Tech Blog Site using MVC
 
-# read-n-seek
-
 ## Table of Contents
 
 - [Project Status](#status)
@@ -25,7 +23,7 @@ Completed
 
 ## Description
 
-A MERN refactor converting a RESTful API to a GraphQL API built with an Apollo Server. The Application is a book search engine where users can login, search books, save books, review all books in their user database and delete books.
+CMS Tech Blog Site using MVC.
 
 ## Installation
 
@@ -41,7 +39,7 @@ In Visual Code Studio or another coding software of your choice, run this applic
 
 ## Built With
 
-js,Node.js,Express.js,React.js,GraphQL,Apollo,MongoDB,Mongoose,Git
+HTML,Handlebars,CSS,Bootstrap,Javascript,MySQL,Node,APIs,Git
 
 ## Contribution
 
@@ -49,7 +47,7 @@ This app is open to contributions. Open up an Issue with suggested improvements 
 
 ## Testing
 
-To run tests, get the source code at git clone [SnugglesMcGee/read-n-seek](https://github.com/SnugglesMcGee/seek-n-read) and install dependencies. Test with nodemon by typing: `npm run watch`.
+To run tests, be sure all NPM packages are installed, open Terminal, and run npm start to connect with your local server.
 
 ## Visuals
 
@@ -59,11 +57,11 @@ To run tests, get the source code at git clone [SnugglesMcGee/read-n-seek](https
 
 ## Deployment Link
 
-[Heroku](https://read-n-seek.herokuapp.com/)
+[Heroku](https://tech-init-easy.herokuapp.com/)
 
 ## Additional Information
 
 - Date: April 20, 2022
 - Author: Constance Mitchell
-- Email: [info@constance.design](mailto:user@example.com)
-- Acknowledgements: Many thanks always to UofT Coding Bootcamp instructor Gabe Perry, TA's Ishmael Lopez and Estiven Salazar.
+- Email: [info@constance.design](mailto:info@constance.design)
+- Acknowledgements: Many thanks always to UofT Coding Bootcamp.

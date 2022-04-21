@@ -1,7 +1,5 @@
 const Sequelize = require("sequelize");
-
 require("dotenv").config();
-
 let sequelize;
 
 if (process.env.JAWSDB_URL) {
@@ -12,7 +10,7 @@ if (process.env.JAWSDB_URL) {
     process.env.DB_USER,
     process.env.DB_PW,
     {
-      host: "localhost",
+      host: "bv2rebwf6zzsv341.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
       dialect: "mysql",
       port: 3306,
     }

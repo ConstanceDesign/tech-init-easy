@@ -5,6 +5,7 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "seeds": "node seeds/index.js",
     "start": "node server.js"
   },
   "repository": {
@@ -16,7 +17,6 @@
   "bugs": {
     "url": "https://github.com/SnugglesMcGee/tech-init-easy/issues"
   },
-  "homepage": "https://github.com/SnugglesMcGee/tech-init-easy#readme",
   "dependencies": {
     "bcrypt": "^5.0.1",
     "connect-session-sequelize": "^7.1.3",

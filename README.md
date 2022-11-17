@@ -53,7 +53,7 @@ To run tests, be sure all NPM packages are installed, open Terminal, and run npm
 
 ## GitHub Link
 
-[GitHub: SnugglesMcGee](https://github.com/SnugglesMcGee)
+[GitHub: ConstanceDesign](https://github.com/ConstanceDesign/tech-init-easy)
 
 ## Deployment Link
 

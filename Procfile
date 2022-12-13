@@ -1,1 +1,1 @@
-web: node server/tech-init-easy.js
+web: node server/server.js

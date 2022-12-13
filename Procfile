@@ -1,1 +1,1 @@
-node src/tech-init-easy.js
+node /tech-init-easy.js
